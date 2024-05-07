@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module models</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">models</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cse60731%5Cdocuments%5Cestudos%5Conedb%5Cmodels.py">c:\users\se60731\documents\estudos\onedb\models.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="datetime.html">datetime</a><br>
+</td><td class="multicolumn"><a href="random.html">random</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text">sqlalchemy.orm.decl_api.Base(<a href="builtins.html#object">builtins.object</a>)
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="models.html#Caixa">Caixa</a>
+</dt><dt class="heading-text"><a href="models.html#Cliente">Cliente</a>
+</dt><dt class="heading-text"><a href="models.html#FormaPagamento">FormaPagamento</a>
+</dt><dt class="heading-text"><a href="models.html#Produto">Produto</a>
+</dt><dt class="heading-text"><a href="models.html#StatusEntrega">StatusEntrega</a>
+</dt><dt class="heading-text"><a href="models.html#Venda">Venda</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Caixa">class <strong>Caixa</strong></a>(sqlalchemy.orm.decl_api.Base)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Caixa">Caixa</a>(**kwargs)<br>
+&nbsp;<br>
+Representa&nbsp;um&nbsp;caixa&nbsp;da&nbsp;loja&nbsp;de&nbsp;material&nbsp;de&nbsp;construção.<br>
+&nbsp;<br>
+Atributos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_caixa&nbsp;(int):&nbsp;ID&nbsp;único&nbsp;do&nbsp;caixa.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nome&nbsp;(str):&nbsp;Nome&nbsp;do&nbsp;caixa.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;funcao&nbsp;(str):&nbsp;Função&nbsp;do&nbsp;caixa&nbsp;(ex:&nbsp;<a href="#Caixa">Caixa</a>,&nbsp;Gerente).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_admissao&nbsp;(datetime):&nbsp;Data&nbsp;de&nbsp;admissão&nbsp;do&nbsp;caixa.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Caixa">Caixa</a></dd>
+<dd>sqlalchemy.orm.decl_api.Base</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Caixa-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><span class="code">A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>data_admissao</strong></dt>
+</dl>
+<dl><dt><strong>funcao</strong></dt>
+</dl>
+<dl><dt><strong>id_caixa</strong></dt>
+</dl>
+<dl><dt><strong>nome</strong></dt>
+</dl>
+<dl><dt><strong>vendas</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x144cc0de660; Caixa&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('caixas', MetaData(), Column('id_caixa', I...issao', DateTime(), table=&lt;caixas&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'caixas'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__abstract__</strong> = True</dl>
+
+<dl><dt><strong>metadata</strong> = MetaData()</dl>
+
+<dl><dt><strong>registry</strong> = &lt;sqlalchemy.orm.decl_api.registry object&gt;</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Cliente">class <strong>Cliente</strong></a>(sqlalchemy.orm.decl_api.Base)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Cliente">Cliente</a>(**kwargs)<br>
+&nbsp;<br>
+Representa&nbsp;um&nbsp;cliente&nbsp;da&nbsp;loja&nbsp;de&nbsp;material&nbsp;de&nbsp;construção.<br>
+&nbsp;<br>
+Atributos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_cliente&nbsp;(int):&nbsp;ID&nbsp;único&nbsp;do&nbsp;cliente.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;nome&nbsp;(str):&nbsp;Nome&nbsp;completo&nbsp;do&nbsp;cliente.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cpf_cnpj&nbsp;(str):&nbsp;CPF&nbsp;ou&nbsp;CNPJ&nbsp;do&nbsp;cliente.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;endereco&nbsp;(str):&nbsp;Endereço&nbsp;completo&nbsp;do&nbsp;cliente.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;telefone&nbsp;(str):&nbsp;Telefone&nbsp;de&nbsp;contato&nbsp;do&nbsp;cliente.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;email&nbsp;(str):&nbsp;Endereço&nbsp;de&nbsp;e-mail&nbsp;do&nbsp;cliente.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;segmento&nbsp;(str):&nbsp;Segmento&nbsp;de&nbsp;mercado&nbsp;do&nbsp;cliente&nbsp;(Residencial,&nbsp;Comercial,&nbsp;Industrial).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;canal_compra&nbsp;(str):&nbsp;Canal&nbsp;de&nbsp;compra&nbsp;do&nbsp;cliente&nbsp;(Loja&nbsp;Física,&nbsp;Online).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Cliente">Cliente</a></dd>
+<dd>sqlalchemy.orm.decl_api.Base</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Cliente-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><span class="code">A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>canal_compra</strong></dt>
+</dl>
+<dl><dt><strong>cpf_cnpj</strong></dt>
+</dl>
+<dl><dt><strong>email</strong></dt>
+</dl>
+<dl><dt><strong>endereco</strong></dt>
+</dl>
+<dl><dt><strong>id_cliente</strong></dt>
+</dl>
+<dl><dt><strong>nome</strong></dt>
+</dl>
+<dl><dt><strong>segmento</strong></dt>
+</dl>
+<dl><dt><strong>telefone</strong></dt>
+</dl>
+<dl><dt><strong>vendas</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x144cbe0eae0; Cliente&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('clientes', MetaData(), Column('id_cliente...ompra', String(), table=&lt;clientes&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'clientes'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__abstract__</strong> = True</dl>
+
+<dl><dt><strong>metadata</strong> = MetaData()</dl>
+
+<dl><dt><strong>registry</strong> = &lt;sqlalchemy.orm.decl_api.registry object&gt;</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="FormaPagamento">class <strong>FormaPagamento</strong></a>(sqlalchemy.orm.decl_api.Base)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#FormaPagamento">FormaPagamento</a>(**kwargs)<br>
+&nbsp;<br>
+Representa&nbsp;uma&nbsp;forma&nbsp;de&nbsp;pagamento.<br>
+&nbsp;<br>
+Atributos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_forma_pagamento&nbsp;(int):&nbsp;ID&nbsp;único&nbsp;da&nbsp;forma&nbsp;de&nbsp;pagamento.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;descricao&nbsp;(str):&nbsp;Descrição&nbsp;da&nbsp;forma&nbsp;de&nbsp;pagamento&nbsp;(ex:&nbsp;Dinheiro,&nbsp;Cartão&nbsp;de&nbsp;Crédito).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;prazo_pagamento&nbsp;(int):&nbsp;Prazo&nbsp;de&nbsp;pagamento&nbsp;em&nbsp;dias&nbsp;(se&nbsp;aplicável).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;desconto&nbsp;(float):&nbsp;Percentual&nbsp;de&nbsp;desconto&nbsp;(se&nbsp;aplicável).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#FormaPagamento">FormaPagamento</a></dd>
+<dd>sqlalchemy.orm.decl_api.Base</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="FormaPagamento-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><span class="code">A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>desconto</strong></dt>
+</dl>
+<dl><dt><strong>descricao</strong></dt>
+</dl>
+<dl><dt><strong>id_forma_pagamento</strong></dt>
+</dl>
+<dl><dt><strong>prazo_pagamento</strong></dt>
+</dl>
+<dl><dt><strong>vendas</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x144cc0dec00; FormaPagamento&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('formas_pagamento', MetaData(), Column('id... Float(), table=&lt;formas_pagamento&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'formas_pagamento'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__abstract__</strong> = True</dl>
+
+<dl><dt><strong>metadata</strong> = MetaData()</dl>
+
+<dl><dt><strong>registry</strong> = &lt;sqlalchemy.orm.decl_api.registry object&gt;</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Produto">class <strong>Produto</strong></a>(sqlalchemy.orm.decl_api.Base)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Produto">Produto</a>(**kwargs)<br>
+&nbsp;<br>
+Representa&nbsp;um&nbsp;produto&nbsp;da&nbsp;loja&nbsp;de&nbsp;material&nbsp;de&nbsp;construção.<br>
+&nbsp;<br>
+Atributos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_produto&nbsp;(int):&nbsp;ID&nbsp;único&nbsp;do&nbsp;produto.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;descricao&nbsp;(str):&nbsp;Descrição&nbsp;do&nbsp;produto.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;categoria&nbsp;(str):&nbsp;Categoria&nbsp;do&nbsp;produto&nbsp;(ex:&nbsp;Cimento&nbsp;e&nbsp;Argamassa,&nbsp;Tijolos&nbsp;e&nbsp;Blocos).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;preco_unitario&nbsp;(float):&nbsp;Preço&nbsp;unitário&nbsp;do&nbsp;produto.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;peso_sazonal&nbsp;(float):&nbsp;Fator&nbsp;de&nbsp;peso&nbsp;sazonal&nbsp;do&nbsp;produto&nbsp;(influencia&nbsp;na&nbsp;demanda).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;unidade_medida&nbsp;(str):&nbsp;Unidade&nbsp;de&nbsp;medida&nbsp;do&nbsp;produto&nbsp;(ex:&nbsp;UN,&nbsp;KG,&nbsp;M).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Produto">Produto</a></dd>
+<dd>sqlalchemy.orm.decl_api.Base</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Produto-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><span class="code">A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>categoria</strong></dt>
+</dl>
+<dl><dt><strong>descricao</strong></dt>
+</dl>
+<dl><dt><strong>id_produto</strong></dt>
+</dl>
+<dl><dt><strong>peso_sazonal</strong></dt>
+</dl>
+<dl><dt><strong>preco_unitario</strong></dt>
+</dl>
+<dl><dt><strong>unidade_medida</strong></dt>
+</dl>
+<dl><dt><strong>vendas</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x144cc01c3e0; Produto&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('produtos', MetaData(), Column('id_produto...edida', String(), table=&lt;produtos&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'produtos'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__abstract__</strong> = True</dl>
+
+<dl><dt><strong>metadata</strong> = MetaData()</dl>
+
+<dl><dt><strong>registry</strong> = &lt;sqlalchemy.orm.decl_api.registry object&gt;</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="StatusEntrega">class <strong>StatusEntrega</strong></a>(sqlalchemy.orm.decl_api.Base)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#StatusEntrega">StatusEntrega</a>(**kwargs)<br>
+&nbsp;<br>
+Representa&nbsp;o&nbsp;status&nbsp;de&nbsp;uma&nbsp;entrega.<br>
+&nbsp;<br>
+Atributos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_status_entrega&nbsp;(int):&nbsp;ID&nbsp;único&nbsp;do&nbsp;status&nbsp;de&nbsp;entrega.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;descricao&nbsp;(str):&nbsp;Descrição&nbsp;do&nbsp;status&nbsp;de&nbsp;entrega&nbsp;(ex:&nbsp;Em&nbsp;processamento,&nbsp;Enviado,&nbsp;Entregue).<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#StatusEntrega">StatusEntrega</a></dd>
+<dd>sqlalchemy.orm.decl_api.Base</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="StatusEntrega-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><span class="code">A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>descricao</strong></dt>
+</dl>
+<dl><dt><strong>id_status_entrega</strong></dt>
+</dl>
+<dl><dt><strong>vendas</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x144cc0ded20; StatusEntrega&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('status_entrega', MetaData(), Column('id_s..., String(), table=&lt;status_entrega&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'status_entrega'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__abstract__</strong> = True</dl>
+
+<dl><dt><strong>metadata</strong> = MetaData()</dl>
+
+<dl><dt><strong>registry</strong> = &lt;sqlalchemy.orm.decl_api.registry object&gt;</dl>
+
+</td></tr></table> <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Venda">class <strong>Venda</strong></a>(sqlalchemy.orm.decl_api.Base)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Venda">Venda</a>(**kwargs)<br>
+&nbsp;<br>
+Representa&nbsp;uma&nbsp;venda&nbsp;realizada&nbsp;na&nbsp;loja&nbsp;de&nbsp;material&nbsp;de&nbsp;construção.<br>
+&nbsp;<br>
+Atributos:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_venda&nbsp;(int):&nbsp;ID&nbsp;único&nbsp;da&nbsp;venda.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_cliente&nbsp;(int):&nbsp;ID&nbsp;do&nbsp;cliente&nbsp;que&nbsp;realizou&nbsp;a&nbsp;venda.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_produto&nbsp;(int):&nbsp;ID&nbsp;do&nbsp;produto&nbsp;vendido.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_venda&nbsp;(datetime):&nbsp;Data&nbsp;da&nbsp;venda.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;valor_venda&nbsp;(float):&nbsp;Valor&nbsp;total&nbsp;da&nbsp;venda.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;quantidade&nbsp;(int):&nbsp;Quantidade&nbsp;de&nbsp;itens&nbsp;vendidos.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_forma_pagamento&nbsp;(int):&nbsp;ID&nbsp;da&nbsp;forma&nbsp;de&nbsp;pagamento&nbsp;utilizada.&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_status_entrega&nbsp;(int):&nbsp;ID&nbsp;do&nbsp;status&nbsp;da&nbsp;entrega.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_entrega&nbsp;(datetime):&nbsp;Data&nbsp;da&nbsp;entrega&nbsp;(se&nbsp;aplicável).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;id_caixa&nbsp;(int):&nbsp;ID&nbsp;do&nbsp;caixa&nbsp;que&nbsp;realizou&nbsp;a&nbsp;venda.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt>Method resolution order:</dt>
+<dd><a href="models.html#Venda">Venda</a></dd>
+<dd>sqlalchemy.orm.decl_api.Base</dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Venda-__init__"><strong>__init__</strong></a>(self, **kwargs)</dt><dd><span class="code">A&nbsp;simple&nbsp;constructor&nbsp;that&nbsp;allows&nbsp;initialization&nbsp;from&nbsp;kwargs.<br>
+&nbsp;<br>
+Sets&nbsp;attributes&nbsp;on&nbsp;the&nbsp;constructed&nbsp;instance&nbsp;using&nbsp;the&nbsp;names&nbsp;and<br>
+values&nbsp;in&nbsp;``kwargs``.<br>
+&nbsp;<br>
+Only&nbsp;keys&nbsp;that&nbsp;are&nbsp;present&nbsp;as<br>
+attributes&nbsp;of&nbsp;the&nbsp;instance's&nbsp;class&nbsp;are&nbsp;allowed.&nbsp;These&nbsp;could&nbsp;be,<br>
+for&nbsp;example,&nbsp;any&nbsp;mapped&nbsp;columns&nbsp;or&nbsp;relationships.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>caixa</strong></dt>
+</dl>
+<dl><dt><strong>cliente</strong></dt>
+</dl>
+<dl><dt><strong>data_entrega</strong></dt>
+</dl>
+<dl><dt><strong>data_venda</strong></dt>
+</dl>
+<dl><dt><strong>forma_pagamento</strong></dt>
+</dl>
+<dl><dt><strong>id_caixa</strong></dt>
+</dl>
+<dl><dt><strong>id_cliente</strong></dt>
+</dl>
+<dl><dt><strong>id_forma_pagamento</strong></dt>
+</dl>
+<dl><dt><strong>id_produto</strong></dt>
+</dl>
+<dl><dt><strong>id_status_entrega</strong></dt>
+</dl>
+<dl><dt><strong>id_venda</strong></dt>
+</dl>
+<dl><dt><strong>produto</strong></dt>
+</dl>
+<dl><dt><strong>quantidade</strong></dt>
+</dl>
+<dl><dt><strong>status_entrega</strong></dt>
+</dl>
+<dl><dt><strong>valor_venda</strong></dt>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__mapper__</strong> = &lt;Mapper at 0x144cc0df5f0; Venda&gt;</dl>
+
+<dl><dt><strong>__table__</strong> = Table('vendas', MetaData(), Column('id_venda', I...'caixas.id_caixa'), table=&lt;vendas&gt;), schema=None)</dl>
+
+<dl><dt><strong>__tablename__</strong> = 'vendas'</dl>
+
+<hr>
+Data descriptors inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+<hr>
+Data and other attributes inherited from sqlalchemy.orm.decl_api.Base:<br>
+<dl><dt><strong>__abstract__</strong> = True</dl>
+
+<dl><dt><strong>metadata</strong> = MetaData()</dl>
+
+<dl><dt><strong>registry</strong> = &lt;sqlalchemy.orm.decl_api.registry object&gt;</dl>
+
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-gerar_caixa"><strong>gerar_caixa</strong></a>()</dt><dd><span class="code">Gera&nbsp;um&nbsp;caixa&nbsp;aleatório&nbsp;com&nbsp;dados&nbsp;fictícios.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Caixa">Caixa</a>:&nbsp;Uma&nbsp;instância&nbsp;da&nbsp;classe&nbsp;<a href="#Caixa">Caixa</a>&nbsp;com&nbsp;dados&nbsp;gerados&nbsp;aleatoriamente.</span></dd></dl>
+ <dl><dt><a name="-gerar_cliente"><strong>gerar_cliente</strong></a>()</dt><dd><span class="code">Gera&nbsp;um&nbsp;cliente&nbsp;aleatório&nbsp;com&nbsp;dados&nbsp;fictícios.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Cliente">Cliente</a>:&nbsp;Uma&nbsp;instância&nbsp;da&nbsp;classe&nbsp;<a href="#Cliente">Cliente</a>&nbsp;com&nbsp;dados&nbsp;gerados&nbsp;aleatoriamente.</span></dd></dl>
+ <dl><dt><a name="-gerar_forma_pagamento"><strong>gerar_forma_pagamento</strong></a>()</dt><dd><span class="code">Gera&nbsp;uma&nbsp;forma&nbsp;de&nbsp;pagamento&nbsp;aleatória&nbsp;com&nbsp;dados&nbsp;fictícios.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#FormaPagamento">FormaPagamento</a>:&nbsp;Uma&nbsp;instância&nbsp;da&nbsp;classe&nbsp;<a href="#FormaPagamento">FormaPagamento</a>&nbsp;com&nbsp;dados&nbsp;gerados&nbsp;aleatoriamente.</span></dd></dl>
+ <dl><dt><a name="-gerar_produto"><strong>gerar_produto</strong></a>()</dt><dd><span class="code">Gera&nbsp;um&nbsp;produto&nbsp;aleatório&nbsp;com&nbsp;dados&nbsp;fictícios.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Produto">Produto</a>:&nbsp;Uma&nbsp;instância&nbsp;da&nbsp;classe&nbsp;<a href="#Produto">Produto</a>&nbsp;com&nbsp;dados&nbsp;gerados&nbsp;aleatoriamente.</span></dd></dl>
+ <dl><dt><a name="-gerar_status_entrega"><strong>gerar_status_entrega</strong></a>(lista_status)</dt><dd><span class="code">Gera&nbsp;um&nbsp;status&nbsp;de&nbsp;entrega&nbsp;aleatório&nbsp;a&nbsp;partir&nbsp;de&nbsp;uma&nbsp;lista&nbsp;de&nbsp;status.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;lista_status&nbsp;(list):&nbsp;Uma&nbsp;lista&nbsp;de&nbsp;strings&nbsp;que&nbsp;representam&nbsp;os&nbsp;possíveis&nbsp;status&nbsp;de&nbsp;entrega.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#StatusEntrega">StatusEntrega</a>:&nbsp;Uma&nbsp;instância&nbsp;da&nbsp;classe&nbsp;<a href="#StatusEntrega">StatusEntrega</a>&nbsp;com&nbsp;um&nbsp;status&nbsp;escolhido&nbsp;aleatoriamente&nbsp;da&nbsp;lista.</span></dd></dl>
+ <dl><dt><a name="-gerar_venda"><strong>gerar_venda</strong></a>()</dt><dd><span class="code">Gera&nbsp;uma&nbsp;venda&nbsp;aleatória&nbsp;com&nbsp;dados&nbsp;fictícios,&nbsp;incluindo&nbsp;cliente,&nbsp;produto,&nbsp;forma&nbsp;de&nbsp;pagamento,&nbsp;etc.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Venda">Venda</a>:&nbsp;Uma&nbsp;instância&nbsp;da&nbsp;classe&nbsp;<a href="#Venda">Venda</a>&nbsp;com&nbsp;dados&nbsp;gerados&nbsp;aleatoriamente.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>Session</strong> = sessionmaker(class_='Session', bind=Engine(sqlit...rucao.db), autoflush=True, expire_on_commit=True)<br>
+<strong>__warningregistry__</strong> = {'version': 0}<br>
+<strong>categorias_produtos</strong> = {'Cimento e Argamassa': 0.2, 'Elétrica': 0.1, 'Ferramentas': 0.1, 'Hidráulica': 0.15, 'Madeiras': 0.1, 'Telhas e Coberturas': 0.1, 'Tijolos e Blocos': 0.15, 'Tintas': 0.1}<br>
+<strong>engine</strong> = Engine(sqlite:///loja_material_construcao.db)<br>
+<strong>fake</strong> = &lt;faker.proxy.Faker object&gt;<br>
+<strong>formas_pagamento</strong> = {'Boleto': 0.1, 'Cartão de Crédito': 0.6, 'Cartão de Débito': 0.2, 'Dinheiro': 0.1}<br>
+<strong>session</strong> = &lt;sqlalchemy.orm.session.Session object&gt;<br>
+<strong>status_entrega</strong> = ['Em processamento', 'Enviado', 'Entregue']</td></tr></table>
+</body></html>

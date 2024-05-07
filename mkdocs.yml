@@ -1,0 +1,14 @@
+site_name: Documentação do OneDb
+theme: material  
+
+plugins:
+  - search  
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - sys.path.append('C:\\Users\\SE60731\\Documents\\Estudos\\onedb') 
+nav:
+    - Início: index.md
+    - API: docs/api.md
